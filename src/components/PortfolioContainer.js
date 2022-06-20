@@ -5,6 +5,18 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import BottomNav from './Footer';
+import space from "./images/space_one.jpg";
+// import view from "./images/view.jpg";
+// import Paper from "@mui/material/Paper";
+
+const styles = {
+  paperContainer: {
+    backgroundImage: `url(${space})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  },
+};
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -26,12 +38,15 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    // <Paper style={styles.paperContainer} sx={{ height: "100%" }}>
+    //  <div>
+    <div style={styles.paperContainer} sx={{ height: "100%" }}>
       {/* We are passing the currentPage from state and the function to update it */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage function which will return a component  */}
       {renderPage()}
       <BottomNav />
     </div>
+    // </Paper>
   );
 }

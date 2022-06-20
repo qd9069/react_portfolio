@@ -9,126 +9,159 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 import CssBaseline from "@mui/material/CssBaseline";
 import IconButton from "@mui/material/IconButton";
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Alert from "@mui/material/Alert";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 export default function Contact() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg" sx={{my: 7, minHeight: "70vh"}}>
-        <Box sx={{ bgcolor: '#DBEFF6', padding: "3px 20px", borderRadius: '10px', opacity: 0.95 }} >
-        <h1>Contact</h1>
-      <Card
-        style={{ maxWidth: 650, padding: "20px 5px", borderRadius: '16px' }}
-        sx={{ my: 4, ml: 9 }}
-      >
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Contact Me
-          </Typography>
-          <form>
-            <Grid container spacing={1}>
-              <Grid xs={12} item>
-                <Typography
-                  gutterBottom
-                  variant="body2"
-                  component="p"
-                  color="textSecondary"
-                >
-                  Name:
-                </Typography>
-                <TextField
-                  // label="Name"
-                  placeholder="Enter your name"
-                  fullWidth
-                  required
-                />
-              </Grid>
-              <Grid xs={12} item>
-                <Typography
-                  gutterBottom
-                  variant="body2"
-                  component="p"
-                  color="textSecondary"
-                >
-                  Email address:
-                </Typography>
-                <TextField
-                  // label="Email address"
-                  placeholder="Enter email"
-                  fullWidth
-                  required
-                  type="email"
-                />
-              </Grid>
-              <Grid xs={12} item>
-                <Typography
-                  gutterBottom
-                  variant="body2"
-                  component="p"
-                  color="textSecondary"
-                >
-                  Message:
-                </Typography>
-                <TextField
-                  // label="Message"
-                  placeholder="Type your message here"
-                  fullWidth
-                  required
-                  multiline
-                  rows={10}
-                />
-              </Grid>
-              <Grid xs={12} item>
-                <Button
-                  size="small"
-                  variant="contained"
-                  color="primary"
-                  type="submit"
-                >
-                  Submit
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-        </CardContent>
-      </Card>
-      <Card
-        style={{ maxWidth: 650, padding: "20px 5px", borderRadius: '16px' }}
-        sx={{ my: 5, ml: 9 }}
-      >
-        <CardContent>
-          <Typography
-            sx={{ fontSize: 18 }}
-            color="black"
-            gutterBottom
-            variant="h6"
+      <Container maxWidth="lg" sx={{ my: 7, minHeight: "70vh" }}>
+        <Box
+          sx={{
+            bgcolor: "#DBEFF6",
+            padding: "3px 20px",
+            borderRadius: "10px",
+            opacity: 0.95,
+          }}
+        >
+          <h1>Contact</h1>
+          <Card
+            style={{ maxWidth: 650, padding: "20px 5px", borderRadius: "16px" }}
+            sx={{ my: 4, ml: 9 }}
           >
-            Alternatively, feel free to contact me via phone number or email
-            below
-          </Typography>
-          <IconButton
-            color="info"
-            aria-label="Phone"
-            href={`tel:8582678234`}
-            size="small"
-            sx={{ mx: 1 }}
-          >
-            <PhoneIphoneIcon /> Phone: (858) 267 - 8234
-          </IconButton>
-          <IconButton
-            color="info"
-            aria-label="Email"
-            href={`mailto:qdengliao@gmail.com`}
-            size="small"
-            sx={{ mx: 1.5 }}
-          >
-            <AttachEmailIcon /> Email: qdengliao@gmail.com
-          </IconButton>
-        </CardContent>
-      </Card>
-      </Box>
+            <CardContent>
+              <Typography gutterBottom variant="h5">
+                Contact Me
+              </Typography>
+              <form>
+                <Grid container spacing={1}>
+                  <Grid xs={12} item>
+                    <Typography
+                      gutterBottom
+                      variant="body2"
+                      component="p"
+                      color="textSecondary"
+                    >
+                      Name:
+                    </Typography>
+                    <TextField
+                      // label="Name"
+                      placeholder="Enter your name"
+                      fullWidth
+                      required
+                    />
+                  </Grid>
+                  <Grid xs={12} item>
+                    <Typography
+                      gutterBottom
+                      variant="body2"
+                      component="p"
+                      color="textSecondary"
+                    >
+                      Email address:
+                    </Typography>
+                    <TextField
+                      // label="Email address"
+                      placeholder="Enter email"
+                      fullWidth
+                      required
+                      type="email"
+                    />
+                  </Grid>
+                  <Grid xs={12} item>
+                    <Typography
+                      gutterBottom
+                      variant="body2"
+                      component="p"
+                      color="textSecondary"
+                    >
+                      Message:
+                    </Typography>
+                    <TextField
+                      // label="Message"
+                      placeholder="Type your message here"
+                      fullWidth
+                      required
+                      multiline
+                      rows={10}
+                    />
+                  </Grid>
+                  <Grid xs={12} item>
+                    <Button
+                      size="small"
+                      variant="contained"
+                      color="primary"
+                      type="submit"
+                    >
+                      Submit
+                    </Button>
+                  </Grid>
+                </Grid>
+              </form>
+            </CardContent>
+          </Card>
+          <div>
+            <Alert
+              icon={<ContactMailIcon />}
+              severity="success"
+              sx={{ fontWeight: "bold", fontSize: "17px" }}
+            >
+              {" "}
+              Additional contact information provided below{" "}
+            </Alert>
+            <Accordion style={{ borderRadius: "6px" }} sx={{ my: 1 }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Phone</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Feel free to call or text:{" "}
+                  <IconButton
+                    color="info"
+                    aria-label="Phone"
+                    href={`tel:8582678234`}
+                    size="small"
+                  >
+                    <PhoneIphoneIcon /> (858) 267 - 8234
+                  </IconButton>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion style={{ borderRadius: "6px" }} sx={{ mt: 1, mb: 5 }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <Typography>Email</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Please send email to:{" "}
+                  <IconButton
+                    color="info"
+                    aria-label="Email"
+                    href={`mailto:qdengliao@gmail.com`}
+                    size="small"
+                  >
+                    <AttachEmailIcon /> qdengliao@gmail.com
+                  </IconButton>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+        </Box>
       </Container>
     </React.Fragment>
   );

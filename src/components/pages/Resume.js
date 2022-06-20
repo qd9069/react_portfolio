@@ -8,7 +8,7 @@ export default function Resume() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg" sx={{my: 7}}>
-        <Box sx={{ bgcolor: '#ecf0f1', padding: "3px 20px", borderRadius: '10px', opacity: 0.95 }} >
+        <Box sx={{ bgcolor: '#DBEFF6', padding: "3px 20px", borderRadius: '10px', opacity: 0.95 }} >
         <div>
            <h1>Resume</h1>
            <p>Download my <a href="https://drive.google.com/file/d/1x1ZnnYs4oQoSCHDXF8Zw15VyTKrJOAXI/view?usp=sharing">resume</a></p>
@@ -18,7 +18,7 @@ export default function Resume() {
             <li>CSS</li>
             <li>JavaScript</li>
             <li>jQuery</li>
-            <li>responsive design</li>
+            <li>Responsive design</li>
             <li>React</li>
             <li>Bootstrap</li>
           </ul>

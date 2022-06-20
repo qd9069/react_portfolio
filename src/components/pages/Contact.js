@@ -17,7 +17,7 @@ export default function Contact() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg" sx={{my: 7}}>
-        <Box sx={{ bgcolor: '#ecf0f1', padding: "3px 20px", borderRadius: '10px', opacity: 0.95 }} >
+        <Box sx={{ bgcolor: '#DBEFF6', padding: "3px 20px", borderRadius: '10px', opacity: 0.95 }} >
         <h1>Contact</h1>
       <Card
         style={{ maxWidth: 650, padding: "20px 5px", borderRadius: '16px' }}

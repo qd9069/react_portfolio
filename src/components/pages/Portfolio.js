@@ -64,7 +64,9 @@ export default function Portfolio() {
       <CssBaseline />
       <Container maxWidth="lg" sx={{ my: 7 }}>
         <Box
-          sx={{ bgcolor: "#ecf0f1", padding: "3px 20px", borderRadius: "10px", opacity: 0.95 }}
+          sx={{ bgcolor: "#DBEFF6", padding: "3px 20px", borderRadius: "10px", opacity: 0.95 }}
+          // sx={{ bgcolor: "#DFF6FF", padding: "3px 20px", borderRadius: "10px", opacity: 0.95 }}
+          // sx={{ bgcolor: "#D9FAFF", padding: "3px 20px", borderRadius: "10px", opacity: 0.95 }}
         >
           <h1>Portfolio</h1>
           {/* for projects */}

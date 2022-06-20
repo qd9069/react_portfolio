@@ -12,7 +12,7 @@ export default function Resume() {
         <div>
            <h1>Resume</h1>
            <p>Download my <a href="https://drive.google.com/file/d/1x1ZnnYs4oQoSCHDXF8Zw15VyTKrJOAXI/view?usp=sharing">resume</a></p>
-          <h1>Front-end Proficiencies</h1>
+          <h2>Front-end Proficiencies</h2>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -22,7 +22,7 @@ export default function Resume() {
             <li>React</li>
             <li>Bootstrap</li>
           </ul>
-          <h1>Back-end Proficiencies</h1>
+          <h2>Back-end Proficiencies</h2>
           <ul>
             <li>APIs</li>
             <li>Node</li>

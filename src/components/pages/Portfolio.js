@@ -20,6 +20,7 @@ export default function Portfolio() {
       pSkills: "JavaScript/Handlebars/CSS",
       pRepo: "https://github.com/qd9069/doggo-meet-up",
       pDeployed: "https://hidden-reaches-52880.herokuapp.com/",
+      pId: 1,
     },
     {
       pImg: weather,
@@ -28,6 +29,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/weather_dashboard_server_apis_project",
       pDeployed:
         "https://qd9069.github.io/weather_dashboard_server_apis_project/",
+      pId: 2,
     },
     {
       pImg: codeQuiz,
@@ -35,6 +37,7 @@ export default function Portfolio() {
       pSkills: "HTML/CSS/JavaScript",
       pRepo: "https://github.com/qd9069/code_quiz_api_project",
       pDeployed: "https://qd9069.github.io/code_quiz_api_project/",
+      pId: 3,
     },
     {
       pImg: unblockUnwind,
@@ -42,6 +45,7 @@ export default function Portfolio() {
       pSkills: "HTML/CSS/JavaScript/jQuery",
       pRepo: "https://github.com/qd9069/unblock-unwind",
       pDeployed: "https://christinaa126.github.io/unblock-unwind/",
+      pId: 4,
     },
     {
       pImg: noteTaker,
@@ -49,6 +53,7 @@ export default function Portfolio() {
       pSkills: "HTML/CSS/JavaScript/Express",
       pRepo: "https://github.com/qd9069/note_taker_express_js_project",
       pDeployed: "https://note-taker-express-js-123.herokuapp.com/",
+      pId: 5,
     },
     {
       pImg: jate,
@@ -56,6 +61,7 @@ export default function Portfolio() {
       pSkills: "HTML/CSS/JavaScript/Express",
       pRepo: "https://github.com/qd9069/jate_text_editor_project",
       pDeployed: "https://fathomless-chamber-74811.herokuapp.com/",
+      pId: 6,
     },
   ];
 
@@ -72,8 +78,8 @@ export default function Portfolio() {
           {/* for projects */}
           <Container maxWidth="md" sx={{ mb: 5 }}>
             <Grid container spacing={3}>
-              {projects.map(({ pImg, pName, pSkills, pRepo, pDeployed }) => (
-                <Grid item xs={12} sm={6}>
+              {projects.map(({ pImg, pName, pSkills, pRepo, pDeployed, pId }) => (
+                <Grid item xs={12} sm={6} key={pId}>
                   <Project
                     img={pImg}
                     name={pName}

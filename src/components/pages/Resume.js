@@ -69,7 +69,7 @@ export default function Resume() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg" sx={{ my: 7 }}>
+      <Container maxWidth="lg" sx={{ my: 7, minHeight: "70vh" }}>
         <Box
           sx={{
             bgcolor: "#DBEFF6",

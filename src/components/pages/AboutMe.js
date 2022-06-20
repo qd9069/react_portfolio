@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg" sx={{ my: 7 }}>
+      <Container maxWidth="lg" sx={{ my: 7, minHeight: "70vh" }}>
         <Box
           sx={{ bgcolor: "#DBEFF6", padding: "3px 20px", borderRadius: "10px", opacity: 0.95 }}
         >

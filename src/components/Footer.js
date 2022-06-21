@@ -13,8 +13,6 @@ export default function BottomNav() {
     <Box alignItems="center" justifyContent="center" sx={{ opacity: 0.95 }}>
       {/* <Box maxWidth="lg" alignItems="center" display="flex" justifyContent="center"> */}
       <BottomNavigation
-        // sx={{ bgcolor: '#D0F8F9' }}
-        // sx={{ bgcolor: '#F1D1F5' }}
         // sx={{ bgcolor: '#CDC3F8' }}
         showLabels
         value={value}

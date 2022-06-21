@@ -10,12 +10,12 @@ export default function BottomNav() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box alignItems="center" justifyContent="center" sx={{ my: 1 }}>
-      {/* <Box sx={{ width: 500 }} > */}
+    <Box alignItems="center" justifyContent="center" sx={{ opacity: 0.95 }}>
       {/* <Box maxWidth="lg" alignItems="center" display="flex" justifyContent="center"> */}
       <BottomNavigation
-        // sx={{ bgcolor: '#CBF7ED', borderRadius: '16px' }}
-        // sx={{ bgcolor: '#F5C7F7' }}
+        // sx={{ bgcolor: '#D0F8F9' }}
+        // sx={{ bgcolor: '#F1D1F5' }}
+        // sx={{ bgcolor: '#CDC3F8' }}
         showLabels
         value={value}
         onChange={(event, newValue) => {

@@ -8,19 +8,36 @@ import doggo from "../images/doggo-meet-up.png";
 import weather from "../images/weather-dashboard.png";
 import codeQuiz from "../images/code-quiz.png";
 import unblockUnwind from "../images/unblock-unwind.png";
-import noteTaker from "../images/note_taker.png";
 import jate from "../images/jate.png";
+import bowel  from "../images/the-bowel-mvmt.png";
+// import noteTaker from "../images/note_taker.png";
 // import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Portfolio() {
   const projects = [
+    {
+      pImg: bowel,
+      pName: "The Bowel Mvmt",
+      pSkills: "React/JavaScript/Material UI",
+      pRepo: "https://github.com/qd9069/the-bowel-mvmt",
+      pDeployed: "https://ancient-refuge-47910.herokuapp.com/",
+      pId: 1,
+    },
     {
       pImg: doggo,
       pName: "Doggo Meet Up",
       pSkills: "JavaScript/Handlebars/CSS",
       pRepo: "https://github.com/qd9069/doggo-meet-up",
       pDeployed: "https://hidden-reaches-52880.herokuapp.com/",
-      pId: 1,
+      pId: 2,
+    },
+    {
+      pImg: unblockUnwind,
+      pName: "Unblock-Unwind",
+      pSkills: "HTML/CSS/JavaScript/jQuery",
+      pRepo: "https://github.com/qd9069/unblock-unwind",
+      pDeployed: "https://christinaa126.github.io/unblock-unwind/",
+      pId: 3,
     },
     {
       pImg: weather,
@@ -29,7 +46,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/weather_dashboard_server_apis_project",
       pDeployed:
         "https://qd9069.github.io/weather_dashboard_server_apis_project/",
-      pId: 2,
+      pId: 4,
     },
     {
       pImg: codeQuiz,
@@ -37,22 +54,6 @@ export default function Portfolio() {
       pSkills: "HTML/CSS/JavaScript",
       pRepo: "https://github.com/qd9069/code_quiz_api_project",
       pDeployed: "https://qd9069.github.io/code_quiz_api_project/",
-      pId: 3,
-    },
-    {
-      pImg: unblockUnwind,
-      pName: "Unblock-Unwind",
-      pSkills: "HTML/CSS/JavaScript/jQuery",
-      pRepo: "https://github.com/qd9069/unblock-unwind",
-      pDeployed: "https://christinaa126.github.io/unblock-unwind/",
-      pId: 4,
-    },
-    {
-      pImg: noteTaker,
-      pName: "Note Taker",
-      pSkills: "HTML/CSS/JavaScript/Express",
-      pRepo: "https://github.com/qd9069/note_taker_express_js_project",
-      pDeployed: "https://note-taker-express-js-123.herokuapp.com/",
       pId: 5,
     },
     {
@@ -63,6 +64,14 @@ export default function Portfolio() {
       pDeployed: "https://fathomless-chamber-74811.herokuapp.com/",
       pId: 6,
     },
+    // {
+    //   pImg: noteTaker,
+    //   pName: "Note Taker",
+    //   pSkills: "HTML/CSS/JavaScript/Express",
+    //   pRepo: "https://github.com/qd9069/note_taker_express_js_project",
+    //   pDeployed: "https://note-taker-express-js-123.herokuapp.com/",
+    //   pId: 7,
+    // },
   ];
 
   return (

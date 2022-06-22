@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_portfolio/static/css/main.53bc1534.css",
-    "main.js": "/react_portfolio/static/js/main.eee3defd.js",
+    "main.js": "/react_portfolio/static/js/main.0d49fecc.js",
     "static/media/the-bowel-mvmt.png": "/react_portfolio/static/media/the-bowel-mvmt.4192fd207144d9528e12.png",
     "static/media/doggo-meet-up.png": "/react_portfolio/static/media/doggo-meet-up.a247e506efbfe7a2c361.png",
     "static/media/space_one.jpg": "/react_portfolio/static/media/space_one.06ae67573c982518923f.jpg",
@@ -21,10 +21,10 @@
     "static/media/roboto-greek-ext-500-normal.woff2": "/react_portfolio/static/media/roboto-greek-ext-500-normal.6fb9cffb1d3e72bf9293.woff2",
     "index.html": "/react_portfolio/index.html",
     "main.53bc1534.css.map": "/react_portfolio/static/css/main.53bc1534.css.map",
-    "main.eee3defd.js.map": "/react_portfolio/static/js/main.eee3defd.js.map"
+    "main.0d49fecc.js.map": "/react_portfolio/static/js/main.0d49fecc.js.map"
   },
   "entrypoints": [
     "static/css/main.53bc1534.css",
-    "static/js/main.eee3defd.js"
+    "static/js/main.0d49fecc.js"
   ]
 }

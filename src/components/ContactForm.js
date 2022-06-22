@@ -7,6 +7,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import cat from "./images/cat.gif";
 
 // Environment variables: UserID has been renamed to Public Key
 const serviceID = process.env.REACT_APP_SERVICE_ID;
@@ -34,6 +35,7 @@ export default function ContactForm() {
     // console.log('serviceId: ' + serviceID);
     // console.log('templateId: ' + templateID);
     // console.log('userId: ' + userID);
+    // url("https://sweetalert2.github.io/images/nyan-cat.gif")
     send(serviceID, templateID, { formState }, userID)
       .then((result) => {
         // console.log(result.text);
@@ -42,7 +44,7 @@ export default function ContactForm() {
           title: "Message Sent Successfully",
           backdrop: `
             rgba(0,0,123,0.4)
-            url("https://sweetalert2.github.io/images/nyan-cat.gif")
+            url(${cat})
             left top
             no-repeat
             `,

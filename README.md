@@ -4,7 +4,7 @@
 
 ## Link
 
-### Please click [here](https://qd9069.github.io/react_my_portfolio/) to find the deployed project.
+### Please click [here](https://qd9069.github.io/react_portfolio/) to find the deployed project.
 
 ## Table of Contents 
 
@@ -19,7 +19,7 @@
 
 ## Description
 
-Welcome to my personal portfolio page!
+Welcome to my React portfolio page!
 
 In this webpage, you will see projects and work applications that I have been developed and deployed. My contact information and link for my resume have been included in this portfolio page.
 
@@ -27,12 +27,12 @@ Please feel free to reach out if you have any questions or comments regarding my
 
 ## Installation
 
-**For users** - no installation needed, please visit the deployed [application link](https://qd9069.github.io/react_my_portfolio/) directly
+**For users** - no installation needed, please visit the deployed [application link](https://qd9069.github.io/react_portfolio/) directly
 
 **For developers** - use the following commands in root folder
 - To install npm packages: `npm i`
 - To install [Material UI](https://mui.com/material-ui/getting-started/overview/) (if needed): `npm install @mui/material @emotion/react @emotion/styled`
-- To start the app: `npm start`
+- To start the app: `npm start` or `npm run start`
 - To stop the app: `Control+C` then close your terminal
 
 ## Usage
@@ -57,6 +57,7 @@ Please feel free to reach out if you have any questions or comments regarding my
 - JavaScript
 - React / Create React App
 - Material UI
+- EmailJS
 ```
 
 ## Assets
@@ -71,6 +72,8 @@ The following images demonstrate the web application's appearance and functional
 
 **Contact**
 ![image for the Contact section](public/images/contact.png)
+
+![image after sending ContactMe Form](public/images/sent_contact_form.png)
 
 **Resume**
 ![image for the Resume section](public/images/resume.png)

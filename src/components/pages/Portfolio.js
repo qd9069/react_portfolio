@@ -20,7 +20,7 @@ export default function Portfolio() {
       pName: "The Bowel Mvmt",
       pSkills: "React/JavaScript/Material UI",
       pRepo: "https://github.com/qd9069/the-bowel-mvmt",
-      pDeployed: "https://ancient-refuge-47910.herokuapp.com/",
+      pDeployed: "https://the-bowel-mvmt.herokuapp.com/",
       pId: 1,
     },
     {

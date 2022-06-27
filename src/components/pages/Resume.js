@@ -82,7 +82,7 @@ export default function Resume() {
             <h1>Resume</h1>
             <p>
               Download my{" "}
-              <a href="https://drive.google.com/file/d/1bgDkNJFNjLVnXhRVJv8JqVdl-6rHobgD/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1Sir2cd0KD7yQ5FutvQJmLhx2Sr498duj/view?usp=sharing">
                 resume
               </a>
             </p>

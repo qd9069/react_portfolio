@@ -22,6 +22,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/the-bowel-mvmt",
       pDeployed: "https://the-bowel-mvmt.herokuapp.com/",
       pId: 1,
+      pDescription: "An application for users who like to know about all public restrooms that are readily available nearby.",
     },
     {
       pImg: doggo,
@@ -30,6 +31,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/doggo-meet-up",
       pDeployed: "https://hidden-reaches-52880.herokuapp.com/",
       pId: 2,
+      pDescription: "A website for dog owners to use when looking for nearby dogs to play with.",
     },
     {
       pImg: unblockUnwind,
@@ -38,6 +40,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/unblock-unwind",
       pDeployed: "https://christinaa126.github.io/unblock-unwind/",
       pId: 3,
+      pDescription: "An application that encourages software developers to take a break to cure their creative block and/or unwind from their current task.",
     },
     {
       pImg: weather,
@@ -47,6 +50,7 @@ export default function Portfolio() {
       pDeployed:
         "https://qd9069.github.io/weather_dashboard_server_apis_project/",
       pId: 4,
+      pDescription: "A simple Weather Dashboard that helps you to see the current weather outlook as well as the weather forecast.",
     },
     {
       pImg: codeQuiz,
@@ -55,6 +59,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/code_quiz_api_project",
       pDeployed: "https://qd9069.github.io/code_quiz_api_project/",
       pId: 5,
+      pDescription: "A fun quiz for anyone who likes coding. There are total of five questions in the quiz and you will need to complete all the questions before the timer reaches zero.",
     },
     {
       pImg: jate,
@@ -63,6 +68,7 @@ export default function Portfolio() {
       pRepo: "https://github.com/qd9069/jate_text_editor_project",
       pDeployed: "https://fathomless-chamber-74811.herokuapp.com/",
       pId: 6,
+      pDescription: "The Just Another Text Editor, shorten as J.A.T.E, is a downloadable application that helps users to create and save notes or code snippets.",
     },
     // {
     //   pImg: noteTaker,
@@ -71,6 +77,7 @@ export default function Portfolio() {
     //   pRepo: "https://github.com/qd9069/note_taker_express_js_project",
     //   pDeployed: "https://note-taker-express-js-123.herokuapp.com/",
     //   pId: 7,
+    //   pDescription:"",
     // },
   ];
 
@@ -85,7 +92,7 @@ export default function Portfolio() {
           {/* for projects */}
           <Container maxWidth="md" sx={{ mb: 5 }}>
             <Grid container spacing={3}>
-              {projects.map(({ pImg, pName, pSkills, pRepo, pDeployed, pId }) => (
+              {projects.map(({ pImg, pName, pSkills, pRepo, pDeployed, pId, pDescription }) => (
                 <Grid item xs={12} sm={6} key={pId}>
                   <Project
                     img={pImg}
@@ -93,6 +100,7 @@ export default function Portfolio() {
                     skills={pSkills}
                     repo={pRepo}
                     deployed={pDeployed}
+                    description={pDescription}
                   />
                 </Grid>
               ))}

@@ -42,6 +42,10 @@ export default function Project(props) {
         </IconButton>
       </CardActions>
       <CardContent>
+        <Typography variant="body2" color="#31305a">
+          {props.description}
+        </Typography>
+        < br />
         <Typography variant="body2" color="text.secondary">
           {props.skills}
         </Typography>

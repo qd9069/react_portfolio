@@ -28,12 +28,12 @@ export default function Contact() {
           }}
         >
           <h1>Contact</h1>
-          <div
+          {/* <div
             style={{
               maxHeight: "79vh",
               overflow: "auto",
             }}
-          >
+          > */}
             <ContactForm />
             <div>
               <Alert
@@ -43,8 +43,8 @@ export default function Contact() {
                 sx={{ fontSize: "17px" }}
               >
                 {" "}
-                <strong>Additional contact information provided below</strong> -
-                scroll down to view more{" "}
+                <strong>Additional contact information provided below</strong> 
+                {/* - scroll down to view more{" "} */}
               </Alert>
               <Accordion style={{ borderRadius: "6px" }} sx={{ my: 1 }}>
                 <AccordionSummary
@@ -91,7 +91,7 @@ export default function Contact() {
                 </AccordionDetails>
               </Accordion>
             </div>
-          </div>
+          {/* </div> */}
         </Box>
       </Container>
     </React.Fragment>
